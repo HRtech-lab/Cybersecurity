@@ -1,6 +1,14 @@
 # Cybersecurity
 
-A defensive computing course built around local, reproducible checks. Begin by checking a file against a trusted record, then study authenticated records, password verifiers, access reviews, logging, read-only reporting, tested restores and signed releases. All examples operate on generated keys, temporary files, in-memory databases or constructed event records.
+Ten defensive computing labs use local fixtures to check file integrity, verify records, review access and test recovery. Each lab includes a Python script, a notebook with recorded output and a figure. Start with the file integrity manifest to see how a check reports a changed file.
+
+## Try a short example
+
+The [short examples](examples/README.md) cover structured audit logs and certificate renewal dates. From the repository root, run
+
+```sh
+python examples/structured_audit_log.py
+```
 
 ## Three questions about a file
 
@@ -29,4 +37,4 @@ An alert threshold trades sensitivity against review workload. The monitoring le
 
 ## Running the labs
 
-Install [requirements.txt](requirements.txt). Each folder contains a Python script, executed notebook, figure and references. The password-verifier exercise needs at least 128 MiB of working memory plus runtime overhead. Generated keys last only for the duration of the example. [MIT licence](../LICENSE)
+Install [requirements.txt](requirements.txt). Each numbered lab contains a Python script, an executed notebook, a figure and references. The password-verifier exercise needs at least 128 MiB of working memory plus runtime overhead. Generated keys last only for the duration of the example. [MIT licence](LICENSE)
