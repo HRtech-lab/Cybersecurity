@@ -4,7 +4,7 @@ Run these commands from the repository root.
 
 ## Certificate renewals
 
-Classify expiry dates from an offline certificate inventory at a fixed UTC instant.
+The example fixes the reference time at midnight UTC on 1 January 2026 and uses a 30-day renewal window. A certificate expiring at that instant is labelled `expired`. One with exactly 30 days left is labelled `renew soon`, and one with 31 days left is labelled `current`.
 
 ```sh
 python examples/certificate_renewals.py
